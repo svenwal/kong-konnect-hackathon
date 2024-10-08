@@ -1,3 +1,5 @@
+![Kong Logo](./images/kong.png)
+
 # Kong Konnect Hackathon
 
 This repository hosts all ressources for the Kong Konnect Hackathon. This includes a README of general instructions (this file) and ressources to complete the example challenges both using the automation with decK as well as with the Kong Ingress Controller.
