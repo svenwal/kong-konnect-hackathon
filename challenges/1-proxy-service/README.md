@@ -6,6 +6,12 @@ Your challenge now to is expose this service to the outside world using Kong. On
 
 For example, if your username is `johndoe`, the service should be accessible under the path `/johndoe`.
 
+## Useful links
+
+* [Services and routes](https://docs.konghq.com/gateway/latest/get-started/services-and-routes/#main)
+* [decK gateway sync](https://docs.konghq.com/deck/latest/reference/deck_gateway_sync/)
+* [Ingress controller](https://docs.konghq.com/kubernetes-ingress-controller/latest/get-started/services-and-routes/) - there are two options GatewayAPI and Ingress - all examples provided in the solutions of this hackathon use Ingress
+
 ## Solution
 
 For both [ingress controller](../../ingress-controller/1-proxy-service/) as well as [decK](../../deck/1-proxy-service/) there is a solution available following the links
