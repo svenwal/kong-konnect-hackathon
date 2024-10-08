@@ -1,0 +1,7 @@
+_format_version: "3.0"
+consumers:
+- username: ${{ env "DECK_USERNAME" }}
+  keyauth_credentials:
+  - key: apikey-from-${{ env "DECK_USERNAME" }}
+  acls:
+  - group: ${{ env "DECK_USERNAME" }}-group

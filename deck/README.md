@@ -30,3 +30,17 @@ Create an own unique username (all lowercase, no special characters or spaces - 
 ```shell
 export DECK_USERNAME=johndoe
 ```
+
+### 🚨 Very important
+
+For the actual syncing of configurations you will use a command like 
+
+```shell
+> deck gateway sync --konnect-addr "https://eu.api.konghq.com" --konnect-control-plane-name "gateway" --konnect-token $KONNECT_TOKEN --select-tag $DECK_USERNAME your-config.yaml
+```
+
+Never ever miss the parameter `--select-tag $DECK_USERNAME` to ensure you are not overwriting other participants configurations. 🚨
+
+## Solutions
+
+There is a subfolder per challenge in this directory containing the necessary YAML files and the command to apply them in the README.md file.

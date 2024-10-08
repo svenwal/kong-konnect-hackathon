@@ -1,0 +1,16 @@
+_format_version: "3.0"
+services:
+- name: hello-world-${{ env "DECK_USERNAME" }}
+  url: http://hello-world-service.app
+  routes:
+  - name: hello-world-${{ env "DECK_USERNAME" }}
+    paths:
+    - /${{ env "DECK_USERNAME" }}
+    plugins:
+      - name: key-auth
+        instance_name: key-auth-${{ env "DECK_USERNAME" }}
+      - name: acl
+        instance_name: acl-${{ env "DECK_USERNAME" }}
+        config:
+          allow:
+          - ${{ env "DECK_USERNAME" }}-group
