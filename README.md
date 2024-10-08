@@ -12,11 +12,11 @@ An AKS cluster has been provisioned for you to use during the hackathon. You sho
 
 The following use cases are covered in the example challenges for both ingress controller and decK:
 
-- Proxy a service
-- Enforce an api key based authentication
-- Creating an api key and associating it with a consumer
-- Enforce access control list enforcement for authorization
-- Applying a rate limit
+- [Proxy a service](./challenges/1-proxy-service/)
+- [Enforce an api key based authentication](./challenges/2-enable-key-auth/)
+- [Creating an api key and associating it with a consumer](./challenges/3-create-api-key/)
+- [Enforce access control list enforcement for authorization](./challenges/4-attach-acl/)
+- [Applying a rate limit](./challenges//5-apply-rate-limit/)
 
 ## Getting started
 
@@ -28,11 +28,15 @@ In order to avoid conflicts between participants, please use a unique username i
 
 The Kong Ingress Controller is already installed in the cluster. Please validate you have access to it using `kubectl get nodes` and let us know if you have any issues.
 
-You can use the provided ingress resources in the [ingress-controller](./ingress-controller) directory to complete the challenges. You can apply the resources using `kubectl apply -f <resource-file>`. Detailed instructions are provided in the [README](./ingress-controller) file in the [ingress-controller](./ingress-controller) directory.
+You can use the provided ingress resources in the [ingress-controller](./ingress-controller) directory to complete the challenges. You can apply the resources using `kubectl apply -f <resource-file>`.
+
+**Detailed instructions are provided in the [README](./ingress-controller) file in the [ingress-controller](./ingress-controller) directory**.
 
 ### Using decK
 
-decK is a tool to manage Kong configuration as code. You can use decK to complete the challenges if you are prefering to use non-Kubernetes specific configurations. You can find the decK configuration in the [deck](./deck) directory. Detailed instructions are provided in the [README](./deck) file in the [deck](./deck) directory.
+decK is a tool to manage Kong configuration as code. You can use decK to complete the challenges if you are prefering to use non-Kubernetes specific configurations. You can find the decK configuration in the [deck](./deck) directory. 
+
+**Detailed instructions are provided in the [README](./deck) file in the [deck](./deck) directory**.
 
 ### Using user interface
 
