@@ -8,6 +8,6 @@ For example, if your username is `johndoe`, the service should be accessible und
 
 ## Solution
 
-For both [ingress controller](../../ingress-controller/1-proxy-service/) as well as [decK](../../deck/1-proxy-service/) there is a solution available following the linkgs
+For both [ingress controller](../../ingress-controller/1-proxy-service/) as well as [decK](../../deck/1-proxy-service/) there is a solution available following the links
 
 You should try first without looking at the solution. If you get stuck, you can always come back here.
