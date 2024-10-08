@@ -26,11 +26,11 @@ In order to avoid conflicts between participants, please use a unique username i
 
 The Kong Ingress Controller is already installed in the cluster. Please validate you have access to it using `kubectl get nodes` and let us know if you have any issues.
 
-You can use the provided ingress resources in the `ingress-controller` directory to complete the challenges. You can apply the resources using `kubectl apply -f <resource-file>`. Detailed instructions are provided in the README.md file in the `ingress-controller` directory.
+You can use the provided ingress resources in the [ingress-controller](./ingress-controller) directory to complete the challenges. You can apply the resources using `kubectl apply -f <resource-file>`. Detailed instructions are provided in the [README](./ingress-controller) file in the [ingress-controller](./ingress-controller) directory.
 
 ### Using decK
 
-decK is a tool to manage Kong configuration as code. You can use decK to complete the challenges. You can find the decK configuration in the `deck` directory. Detailed instructions are provided in the README.md file in the `deck` directory.
+decK is a tool to manage Kong configuration as code. You can use decK to complete the challenges if you are prefering to use non-Kubernetes specific configurations. You can find the decK configuration in the [deck](./deck) directory. Detailed instructions are provided in the [README](./deck) file in the [deck](./deck) directory.
 
 ### Using user interface
 
