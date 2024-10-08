@@ -1,0 +1,54 @@
+apiVersion: configuration.konghq.com/v1
+kind: KongPlugin
+metadata:
+  name: key-auth-xxxxxx-your-username
+  namespace: app
+plugin: key-auth
+---
+apiVersion: configuration.konghq.com/v1
+kind: KongPlugin
+metadata:
+  name: acl-xxxxxx-your-username
+  namespace: app
+config:
+  allow: 
+    - xxxxxx-your-username-acl-group
+plugin: acl
+---
+apiVersion: configuration.konghq.com/v1
+kind: KongPlugin
+metadata:
+  name: rate-limiting-xxxxxx-your-username
+  namespace: app
+config:
+  limit: 
+  - 3
+  - 100
+  window_size:
+  - 60
+  - 3600
+  identifier: consumer
+  window_type: sliding
+  strategy: local
+plugin: rate-limiting-advanced
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: hello-world-service-xxxxxx-your-username
+  namespace: app
+  annotations:
+    konghq.com/plugins: key-auth-xxxxxx-your-username, acl-xxxxxx-your-username,rate-limiting-xxxxxx-your-username
+    konghq.com/strip-path: "true"
+spec:
+  ingressClassName: kong
+  rules:
+  - http:
+      paths:
+      - path: /xxxxxx-your-username
+        pathType: Prefix
+        backend:
+          service:
+            name: hello-world-service
+            port: 
+              number: 80
