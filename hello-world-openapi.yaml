@@ -6,7 +6,10 @@ info:
   contact:
     email: sven@walther.world
 servers:
+  - url: http://konggw.hackaton.test.uniqa.pl/test
+    description: Gateway test installation
   - url: http://hello-world-service.app
+    description: backend within Kubernetes
 tags:
   - name: hello
     description: World
