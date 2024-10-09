@@ -1,0 +1,36 @@
+openapi: 3.0.0
+info:
+  description: "Hello World"
+  version: 1.0.2
+  title: Hello World Service
+  contact:
+    email: sven@walther.world
+servers:
+  - url: http://hello-world-service.app
+tags:
+  - name: hello
+    description: World
+    externalDocs:
+      description: Developer Portal
+      url: https://e57b4bf81db2.eu.portal.konghq.com/
+paths:
+  /:
+    get:
+      tags:
+        - hello
+      summary: You might guess it - hello world here
+      description: "Will return a hello world"
+      operationId: helloWorld
+      responses:
+        "200":
+          description: Normal response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  hello:
+                    type: string
+                    description: the world
+              example: # Sample object
+                hello: world
