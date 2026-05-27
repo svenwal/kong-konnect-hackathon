@@ -22,7 +22,7 @@ Test if the connection to Konnect works by running the following command:
 > export KONNECT_TOKEN=kpat_xxxxxxx # replace with your token
 > deck gateway ping --konnect-addr "https://eu.api.konghq.com" --konnect-control-plane-name "gateway" --konnect-token $KONNECT_TOKEN
 
-Successfully Konnected to the UNIQA organization!
+Successfully Konnected to the Hackathon organization!
 ```
 
 Create an own unique username (all lowercase, no special characters or spaces - for example if your name is "John Doe" you could choose `johndoe`) and put it into an environment variable called `DECK_USERNAME`.
